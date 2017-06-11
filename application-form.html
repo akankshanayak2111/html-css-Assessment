@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+
+    <title>Application Form</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+
+  <body>
+    
+    <div class="container">
+
+      <h2>Job Application Form</h2>
+
+      <h4 class="border">Please complete each field carefully. The application form must be fully completed to be considered.</h4>
+      <br>
+
+
+      <form action="/application-success" method="POST">
+
+        <div class="form-group row">
+          <label for="inputFirstName" class="col-xs-2 col-form-label">First Name:</label>
+          <div class="col-xs-4">
+            <input type="text" name="first-name" class="form-control yellow" id="inputFirstName" placeholder="First Name">
+          </div>
+        </div>  
+
+
+        <div class="form-group row">
+          <label for="inputLastName" class="col-xs-2 col-form-label">Last Name:</label>
+          <div class="col-xs-4">
+            <input type="text" name="last-name" class="form-control yellow bold" id="inputLastName" placeholder="Last Name">
+          </div>
+        </div>  
+
+
+        <div class="form-group row">
+          <label for="inputSalary" class="col-xs-2 col-form-label">Salary desired: $</label>
+          <div class="col-xs-4">
+            <input type="number" name="salary" class="form-control yellow" id="inputSalary" placeholder="0">
+          </div>
+        </div>  
+          
+        
+        <div class="form-group row">
+          <label for="inputPosition" class="col-xs-2 col-form-label">Position applying for:</label>
+          <div class="col-xs-4">
+            <select name="job position" class="form-control">
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="QA Engineer">QA Engineer</option>
+              <option value="Product Manager">Product Manager</option>
+            </select>
+          </div>
+        </div> 
+          
+        <div class="form-group row">
+          <div class="offset-xs-2 col-xs-10">
+            <button type="submit" class="btn btn-primary yellow">Submit</button>
+          </div>
+        </div>
+            
+      </form>
+    
+    </div>
+
+  </body>
+
+</html>
